@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery Store Website</title>
+
+    <link rel="icon" type="image/icon" href="image/basket.jpeg">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header class="header">
+
+    <a href="#" class="logo"><i class="fa fa-shopping-basket"></i> Grocery</a>
+
+    <nav class="navbar">
+        <a href="#Home">Home</a>
+        <a href="#features">Features</a>
+        <a href="#products">Products</a>
+        <a href="#categories">Categories</a>
+        <a href="#review">Review</a>
+        <a href="#blogs">Blogs</a>
+    </nav>
+
+    <div class="icons">
+        <div class="fa fa-bars" id="menu-btn"></div>
+        <div class="fa fa-search" id="search-btn"></div>
+        <div class="fa fa-shopping-cart" id="cart-btn"></div>
+        <div class="fa fa-user" id="login-btn"></div>
+    </div>
+
+    <!-- Search -->
+    <form class="search-form">
+        <input type="search" id="search-box" placeholder="Search Here...">
+        <label for="search-box" class="fa fa-search"></label>
+    </form>
+
+    <!-- Cart -->
+    <div class="shopping-cart">
+
+        <div class="box">
+            <i class="fa fa-trash"></i>
+            <img src="image/product1.jpeg" width="100rem">
+            <div class="content">
+                <h3>Parle</h3>
+                <span class="price">₹165/-</span>
+                <span class="quantity">Qty : 1</span>
+            </div>
+        </div>
+
+        <div class="box">
+            <i class="fa fa-trash"></i>
+            <img src="image/cart-img-2.jpeg" width="80rem">
+            <div class="content">
+                <h3>Rice</h3>
+                <span class="price">₹80/-</span>
+                <span class="quantity">Qty : 1</span>
+            </div>
+        </div>
+
+        <div class="box">
+            <i class="fa fa-trash"></i>
+            <img src="image/cart-img-3.jpeg" width="100rem">
+            <div class="content">
+                <h3>Sugar</h3>
+                <span class="price">₹85/-</span>
+                <span class="quantity">Qty : 1</span>
+            </div>
+        </div>
+
+        <div class="box">
+            <i class="fa fa-trash"></i>
+            <img src="image/cart-img-4.jpeg" width="80rem">
+            <div class="content">
+                <h3>Nivea Cream</h3>
+                <span class="price">₹150/-</span>
+                <span class="quantity">Qty : 1</span>
+            </div>
+        </div>
+
+        <div class="total"> Total: ₹480/- </div>
+        <a href="#" class="btn">Checkout</a>
+    </div>
+
+    <!-- Login -->
+    <form class="login-form">
+        <h3>Login Now</h3>
+        <input type="email" placeholder="Your Email" class="box">
+        <input type="password" placeholder="Your Password" class="box">
+        <p>Forget Your Password <a href="#">Click Here</a></p>
+        <p>Don't Have An Account <a href="#">Create Now</a></p>
+        <input type="submit" value="Login Now" class="btn">
+    </form>
+
+</header>
+<!-- END HEADER -->
+
+
+<!-- HOME SECTION -->
+<section class="Home" id="Home">
+    <div class="content">
+        <h3>Delivering <span>freshness</span> at your doorstep</h3>
+        <p>Welcome back! Track your grocery business here.</p>
+        <a href="#" class="btn">Shop Now</a>
+    </div>
+</section>
+
+
+<!-- FEATURES -->
+<section class="features" id="features">
+    <h1 class="heading"> Our <span>Features</span></h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="image/feature1.jpeg">
+            <h3>FORTUNE</h3>
+            <p>Premium Kachi Ghani Mustard Oil Combo (2×1L)</p>
+            <a href="#" class="btn">Read More</a>
+        </div>
+
+        <div class="box">
+            <img src="image/feature2.jpeg">
+            <h3>EASY PAYMENTS</h3>
+            <p>Pay via UPI, card, net banking or wallet.</p>
+            <a href="#" class="btn">Read More</a>
+        </div>
+
+        <div class="box">
+            <img src="image/feature3.jpeg">
+            <h3>FREE DELIVERY</h3>
+            <p>Lorem ipsum dolor sit amet consectetur!</p>
+            <a href="#" class="btn">Read More</a>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- PRODUCTS -->
+<section class="products" id="products">
+
+    <h1 class="heading"> Our <span>Products</span></h1>
+
+    <div class="products-slider">
+        <div class="wrapper" id="products-container">
+
+            <!-- Static items also shown -->
+            <div class="box">
+                <img src="image/product1.jpeg">
+                <h1>PARLE</h1>
+                <div class="price"> ₹165/-</div>
+                <a href="#" class="btn">Add to Cart</a>
+            </div>
+
+            <div class="box">
+                <img src="image/product2.jpeg">
+                <h1>Pushp Brand</h1>
+                <div class="price"> ₹140/-</div>
+                <a href="#" class="btn">Add to Cart</a>
+            </div>
+
+            <div class="box">
+                <img src="image/product4.jpeg">
+                <h1>Tata Salt</h1>
+                <div class="price"> ₹190/-</div>
+                <a href="#" class="btn">Add to Cart</a>
+            </div>
+
+            <div class="box">
+                <img src="image/product3.jpeg">
+                <h1>Pears</h1>
+                <div class="price"> ₹323/-</div>
+                <a href="#" class="btn">Add to Cart</a>
+            </div>
+
+            <div class="box">
+                <img src="image/product5.jpeg">
+                <h1>TRESemme</h1>
+                <div class="price"> ₹682/-</div>
+                <a href="#" class="btn">Add to Cart</a>
+            </div>
+
+            <div class="box">
+                <img src="image/product6.jpeg">
+                <h1>FORTUNE</h1>
+                <div class="price"> ₹1036/-</div>
+                <a href="#" class="btn">Add to Cart</a>
+            </div>
+
+        </div>
+    </div>
+
+</section>
+
+
+<!-- CATEGORIES -->
+<section class="categories" id="categories">
+    <h1 class="heading"> Product <span>Categories</span></h1>
+
+    <div class="categories-slider">
+        <div class="wrapper">
+
+            <div class="box">
+                <img src="image/cat1.jpeg">
+                <h3>Fresh Fruits</h3>
+                <p>Upto 25% Off</p>
+                <a href="#" class="btn">Shop Now</a>
+            </div>
+
+            <div class="box">
+                <img src="image/cat2.jpeg">
+                <h3>Vegetables</h3>
+                <p>Upto 25% Off</p>
+                <a href="#" class="btn">Shop Now</a>
+            </div>
+
+            <div class="box">
+                <img src="image/cat3.jpeg">
+                <h3>Watermelon</h3>
+                <p>Upto 35% Off</p>
+                <a href="#" class="btn">Shop Now</a>
+            </div>
+
+            <div class="box">
+                <img src="image/cat.4.jpeg">
+                <h3>Dairy Product</h3>
+                <p>Upto 15% Off</p>
+                <a href="#" class="btn">Shop Now</a>
+            </div>
+
+            <div class="box">
+                <img src="image/cat.5.jpeg">
+                <h3>Potatoes</h3>
+                <p>Upto 25% Off</p>
+                <a href="#" class="btn">Shop Now</a>
+            </div>
+
+            <div class="box">
+                <img src="image/cat.6.jpeg">
+                <h3>Dry Fruits</h3>
+                <p>Upto 55% Off</p>
+                <a href="#" class="btn">Shop Now</a>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- REVIEW -->
+<section class="review" id="review">
+
+    <h1 class="heading"> Customer's <span>Review</span></h1>
+
+    <div class="review-slider">
+        <div class="wrapper">
+
+            <div class="box">
+                <img src="image/review1.jpeg">
+                <p>Fresh quality and great packaging.</p>
+                <h3>Aarushi</h3>
+            </div>
+
+            <div class="box">
+                <img src="image/review2.jpeg">
+                <p>Very good product at a reasonable price.</p>
+                <h3>Vansh</h3>
+            </div>
+
+            <div class="box">
+                <img src="image/review3.jpeg">
+                <p>Delivery was quick and accurate.</p>
+                <h3>Sneha</h3>
+            </div>
+
+            <div class="box">
+                <img src="image/review4.jpeg">
+                <p>Perfect quality & aroma!</p>
+                <h3>Rahul</h3>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- BLOGS -->
+<section class="blogs" id="blogs">
+    <h1 class="heading"> Our <span>Blogs</span></h1>
+
+    <div class="blogs-slider">
+        <div class="wrapper">
+
+            <div class="box">
+                <img src="image/blog1.jpeg">
+                <div class="content">
+                    <div class="icons">
+                        <a href="#"><i class="fa fa-user"></i> By User</a>
+                        <a href="#"><i class="fa fa-calendar"></i> 1st Jan, 2026</a>
+                    </div>
+                    <h3>Rajdhani Besan</h3>
+                    <p>Besan Gram Flour (1 kg)</p>
+                    <a href="#" class="btn">Read More</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="image/blog2.jpeg">
+                <div class="content">
+                    <div class="icons">
+                        <a href="#"><i class="fa fa-user"></i> By User</a>
+                        <a href="#"><i class="fa fa-calendar"></i> 15th Jan, 2026</a>
+                    </div>
+                    <h3>Patanjali</h3>
+                    <p>Dant Kanti (800g pack)</p>
+                    <a href="#" class="btn">Read More</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="image/blog3.jpeg">
+                <div class="content">
+                    <div class="icons">
+                        <a href="#"><i class="fa fa-user"></i> By User</a>
+                        <a href="#"><i class="fa fa-calendar"></i> 10th Jan, 2026</a>
+                    </div>
+                    <h3>Aashirvaad</h3>
+                    <p>Shudh Chakki Atta</p>
+                    <a href="#" class="btn">Read More</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="image/blog4.jpeg">
+                <div class="content">
+                    <div class="icons">
+                        <a href="#"><i class="fa fa-user"></i> By User</a>
+                        <a href="#"><i class="fa fa-calendar"></i> 12th Feb, 2026</a>
+                    </div>
+                    <h3>Fresh & Organic Vegetables</h3>
+                    <p>Farm fresh quality.</p>
+                    <a href="#" class="btn">Read More</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- FOOTER -->
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>Groco <i class="fa fa-shopping-basket"></i></h3>
+            <p>Follow us on social media</p>
+            <div class="share">
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-instagram"></a>
+                <a href="#" class="fa fa-linkedin"></a>
+            </div>
+        </div>
+
+        <div class="box">
+            <h3>Contact Info</h3>
+            <a class="links"><i class="fa fa-phone"></i> +91 9856348xxx</a>
+            <a class="links"><i class="fa fa-phone"></i> +91 78563487xx</a>
+            <a class="links"><i class="fa fa-envelope"></i> vansh@gmail.com</a>
+            <a class="links"><i class="fa fa-map-marker"></i> Kota, India</a>
+        </div>
+
+        <div class="box">
+            <h3>Quick Links</h3>
+            <a class="links"><i class="fa fa-arrow-right"></i> Home</a>
+            <a class="links"><i class="fa fa-arrow-right"></i> Features</a>
+            <a class="links"><i class="fa fa-arrow-right"></i> Categories</a>
+            <a class="links"><i class="fa fa-arrow-right"></i> Review</a>
+            <a class="links"><i class="fa fa-arrow-right"></i> Blogs</a>
+        </div>
+
+        <div class="box">
+            <h3>Newsletter</h3>
+            <p>Subscribe For Latest Updates</p>
+            <input type="email" placeholder="Your Email" class="email">
+            <input type="submit" value="Subscribe" class="btn">
+            <img src="image/payment.jpeg" class="payment-img">
+        </div>
+
+    </div>
+
+    <div class="credit">Created <span>By Vansh Dwivedi</span> | All Rights Reserved</div>
+
+</section>
+
+
+<!-- JS FILES -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script src="backend_sim/backend.js"></script>
+<script src="js/script.js"></script>
+
+</body>
+</html>
